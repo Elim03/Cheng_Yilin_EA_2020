@@ -472,23 +472,23 @@ riskpoll <- riskpoll_each_yr %>% select("bb$species","BAU","Ai","Bi","Ci","CWW")
 
 risk_BAU <- data.frame(species = bb$species, strategy = rep("BAU", length(bb$species)), 
                        
-                       risk_score = riskpoll$BAU)
+                       risk_score = 2*riskpoll$BAU)
 
 risk_Ai <- data.frame(species = bb$species, strategy = rep("Ai", length(bb$species)), 
                       
-                      risk_score = riskpoll$Ai)
+                      risk_score = 2*riskpoll$Ai)
 
 risk_Bi <- data.frame(species = bb$species, strategy = rep("Bi", length(bb$species)), 
                       
-                      risk_score = riskpoll$Bi)
+                      risk_score = 2*riskpoll$Bi)
 
 risk_Ci <- data.frame(species = bb$species, strategy = rep("Ci", length(bb$species)), 
                       
-                      risk_score = riskpoll$Ci)
+                      risk_score = 2*riskpoll$Ci)
 
 risk_CWW <- data.frame(species = bb$species, strategy = rep("CWW", length(bb$species)), 
                        
-                       risk_score = riskpoll$CWW)
+                       risk_score = 2*riskpoll$CWW)
 
 
 riskpoll_cal <- as.data.frame (rbind (risk_BAU, risk_Ai, risk_Bi, risk_Ci, risk_CWW))
@@ -796,23 +796,23 @@ riskmal <- riskmal_each_yr %>% select("mal$Species","BAU","Ai","Bi","Ci","CWW")
 
 risk_BAU_mm <- data.frame(species = mal$Species, strategy = rep("BAU", length(mal$Species)), 
                           
-                          risk_score = riskmal$BAU)
+                          risk_score = 2*riskmal$BAU)
 
 risk_Ai_mm <- data.frame(species = mal$Species, strategy = rep("Ai", length(mal$Species)), 
                          
-                         risk_score = riskmal$Ai)
+                         risk_score = 2*riskmal$Ai)
 
 risk_Bi_mm <- data.frame(species = mal$Species, strategy = rep("Bi", length(mal$Species)), 
                          
-                         risk_score = riskmal$Bi)
+                         risk_score = 2*riskmal$Bi)
 
 risk_Ci_mm <- data.frame(species = mal$Species, strategy = rep("Ci", length(mal$Species)), 
                          
-                         risk_score = riskmal$Ci)
+                         risk_score = 2*riskmal$Ci)
 
 risk_CWW_mm <- data.frame(species = mal$Species, strategy = rep("CWW", length(mal$Species)), 
                           
-                          risk_score = riskmal$CWW)
+                          risk_score = 2*riskmal$CWW)
 
 
 riskmal_cal <- as.data.frame (rbind (risk_BAU_mm, risk_Ai_mm, risk_Bi_mm, risk_Ci_mm, risk_CWW_mm))
